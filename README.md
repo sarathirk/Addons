@@ -118,3 +118,4 @@ PAGES_URL=http://localhost:7000 node build.js
 ├── omdb.js       ← OMDB metadata + posters
 └── config.js     ← credentials (use GitHub Secrets in prod)
 ```
+# Addons
