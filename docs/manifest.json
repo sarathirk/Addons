@@ -1,0 +1,11 @@
+{
+  "id": "community.telegram.streams.static",
+  "version": "2.0.0",
+  "name": "📲 Telegram Streams",
+  "description": "Run the GitHub Action to populate this addon with your channel content.",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
+  "resources": ["stream"],
+  "types": ["movie", "series"],
+  "idPrefixes": ["tt"],
+  "catalogs": []
+}

@@ -1,0 +1,4 @@
+node_modules/
+.env
+# config.js contains secrets — don't commit with real values!
+# Use GitHub Secrets instead (see README)
