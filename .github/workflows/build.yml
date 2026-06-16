@@ -2,7 +2,7 @@ name: Build Stremio Addon
 
 on:
   schedule:
-    - cron: "0 * * * *"   # every hour
+    - cron: "*/30 * * * *"   # every hour
   workflow_dispatch:        # manual trigger
   push:
     branches: [main]
