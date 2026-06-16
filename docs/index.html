@@ -2,17 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Stremio Telegram Addon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📲 Moviebuff — Stremio Addon</title>
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; background: #0f0f0f; color: #eee; }
-    .box { background: #1a1a1a; border: 1px solid #333; border-radius: 10px; padding: 20px; margin: 20px 0; }
-    code { background: #222; padding: 2px 8px; border-radius: 4px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #0d0d0d; color: #e8e8e8; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .card { background: #161616; border: 1px solid #2a2a2a; border-radius: 16px; padding: 40px; max-width: 520px; width: 100%; }
+    .tg-icon { font-size: 48px; margin-bottom: 16px; }
+    h1 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .channel { color: #229ED9; font-size: 15px; margin-bottom: 28px; }
+    .stats { display: flex; gap: 16px; margin-bottom: 28px; }
+    .stat { background: #1e1e1e; border-radius: 10px; padding: 14px 20px; flex: 1; text-align: center; }
+    .stat-num { font-size: 24px; font-weight: 700; color: #fff; }
+    .stat-label { font-size: 12px; color: #888; margin-top: 2px; }
+    .install-box { background: #1e1e1e; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+    .install-label { font-size: 12px; color: #888; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .install-url { font-family: monospace; font-size: 13px; color: #ccc; word-break: break-all; background: #111; padding: 10px 14px; border-radius: 6px; }
+    .btn { display: block; background: #7b5ea7; color: #fff; padding: 14px; border-radius: 10px; text-decoration: none; text-align: center; font-weight: 600; font-size: 15px; margin-top: 12px; transition: background 0.2s; }
+    .btn:hover { background: #9370c4; }
+    .updated { color: #555; font-size: 12px; text-align: center; margin-top: 20px; }
   </style>
 </head>
 <body>
-  <h1>📲 Telegram Streams</h1>
-  <div class="box">
-    Run the GitHub Action to build your addon, then refresh this page.
+  <div class="card">
+    <div class="tg-icon">📲</div>
+    <h1>Telegram Streams</h1>
+    <div class="channel">Moviebuff</div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Movies</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Series</div>
+      </div>
+    </div>
+    <div class="install-box">
+      <div class="install-label">Addon URL</div>
+      <div class="install-url">https://sarathirk.github.io/Addons/manifest.json</div>
+    </div>
+    <a class="btn" href="stremio://sarathirk.github.io/Addons/manifest.json">
+      ▶ Open in Stremio
+    </a>
+    <div class="updated">Last updated: Tue, 16 Jun 2026 05:52:11 GMT · Auto-rebuilds every hour</div>
   </div>
 </body>
 </html>

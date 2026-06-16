@@ -1,11 +1,55 @@
 {
   "id": "community.telegram.streams.static",
   "version": "2.0.0",
-  "name": "📲 Telegram Streams",
-  "description": "Run the GitHub Action to populate this addon with your channel content.",
+  "name": "📲 Moviebuff Streams",
+  "description": "Stream videos from Telegram channel Moviebuff. Updated hourly.",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg",
-  "resources": ["stream"],
-  "types": ["movie", "series"],
-  "idPrefixes": ["tt"],
-  "catalogs": []
+  "resources": [
+    "catalog",
+    "meta",
+    "stream"
+  ],
+  "types": [
+    "movie",
+    "series"
+  ],
+  "idPrefixes": [
+    "tt"
+  ],
+  "catalogs": [
+    {
+      "id": "tg-movies",
+      "type": "movie",
+      "name": "📲 Moviebuff Movies",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        },
+        {
+          "name": "skip",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "id": "tg-series",
+      "type": "series",
+      "name": "📲 Moviebuff Series",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        },
+        {
+          "name": "skip",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "behaviorHints": {
+    "configurable": false,
+    "configurationRequired": false
+  }
 }
